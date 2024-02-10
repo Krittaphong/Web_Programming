@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>กรอกข้อมูลสมัครเป็นนักศึกษา</title>
+    <link rel="stylesheet" href="test.css">  
+</head>
+<body>
+    <h2>กรอกข้อมูลสมัครเป็นนักศึกษา</h2>
+    <form action="test1.php" method="post">
+        <label for="national_id">เลขบัตรประชาชน:</label>
+        <input type="text" id="national_id" name="national_id" required><br>
+        <label for="title">คำนำหน้า:</label>
+        <select name="title" id="title" required>
+            <option value="นาย">นาย</option>
+            <option value="นาง">นาง</option>
+            <option value="นางสาว">นางสาว</option>
+        </select><br>
+        <label for="first_name">ชื่อ:</label>
+        <input type="text" id="first_name" name="first_name" required><br>
+        <label for="last_name">นามสกุล:</label>
+        <input type="text" id="last_name" name="last_name" required><br>
+        <label for="nickname">ชื่อเล่น:</label>
+        <input type="text" id="nickname" name="nickname"><br>
+        <label for="dob">เดือน/วัน/ปีเกิด:</label>
+        <input type="date" id="dob" name="dob" required><br>
+        <label for="phone">เบอร์มือถือ:</label>
+        <input type="text" id="phone" name="phone" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="nationality">สัญชาติ:</label>
+        <input type="text" id="nationality" name="nationality" required><br>
+        <label for="ethnicity">เชื้อชาติ:</label>
+        <input type="text" id="ethnicity" name="ethnicity" required><br>
+        <label for="religion">ศาสนา:</label>
+        <input type="text" id="religion" name="religion" required><br>
+        <label for="gender">เพศ:</label>
+        <input type="radio" id="male" name="gender" value="ชาย" required>
+        <label for="male">ชาย</label>
+        <input type="radio" id="female" name="gender" value="หญิง">
+        <label for="female">หญิง</label>
+        <input type="radio" id="other" name="gender" value="อื่นๆ">
+        <label for="other">อื่นๆ</label><br>
+        <label for="address">ที่อยู่:</label><br>
+        <textarea name="address" id="address" rows="5" cols="40"></textarea><br>
+        <label for="education_level">วุฒิการศึกษา:</label>
+        <select name="education_level" id="education_level" required>
+            <option value="ม.3">ม.3</option>
+            <option value="ม.6">ม.6</option>
+            <option value="ปวช">ปวช</option>
+            <option value="ปวส">ปวส</option>
+        </select><br>
+        <label for="school_name">ชื่อสถานศึกษา:</label>
+        <input type="text" id="school_name" name="school_name" required><br>
+        <label for="gpa">GPA:</label>
+        <input type="text" id="gpa" name="gpa" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
